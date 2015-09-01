@@ -1,0 +1,135 @@
+
+<!-- <div ng-result></div> -->
+</br>
+<div class= "menu" ng-intro></div>
+<div >
+
+  <div class="col-md-8" style="margin-left:50px;clear:both">
+  <div >
+        <ul style="float:none; display:block-inline; max-width:50% ;margin-left:-60px; margin-top: 40px" class="list-inline">
+          <li class="list-group-item"
+            ng-repeat="tab in ctrl.tabs"
+            ng-class="{active:ctrl.isActiveTab(tab.url)}"
+            ng-click="ctrl.onClickTab(tab); ctrl.getArticles()" >
+            <h3>{{tab.title}}</h3></li>
+        </ul>
+        <div >
+          <div ng-include="ctrl.currentTab"></div>
+        </div>
+      </div>
+  </div>
+
+     <script type="text/ng-template" id="Dashboard.tpl.html">
+        <div class="tabbable tabs-left">
+          <h3 >View Different Levels</h3></br>
+          <ul  style="margin-left:-20px" class="list-group ">
+            <li ng-repeat="filter in ctrl.filters"
+              ng-class="{active:ctrl.isActiveFilter(filter.url)}"
+              ng-click="ctrl.onClickFilter(filter);ctrl.getArticles()" 
+              style=" width:20%"
+              data-toggle="tab"
+              class="list-group-item ">
+              <h4 >{{filter.title}}</h4>
+              </li>
+          </ul>
+          <div class="mainView">
+            <div ng-include="ctrl.currentFilter"></div>
+          </div>
+        </div>
+
+        <script type="text/ng-template" id="Economy.tpl.html">
+
+          <div id="viewEconomy" class="col-md-9" style="margin-left:140px ; margin-top:-260px; ">
+            <div class="panel panel-default" ng-repeat="article in ctrl.articles" ng-if ='article.category=="economy"'>
+                <div class="panel-heading">
+                    <span class="panel-title">{{article.date}}, {{article.heading}}</span>
+                    <div class="btn-group pull-right">
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn- dropdown-toggle" ng-if='article.type=="document"'><span class="glyphicon glyphicon-open-file"></span></a>
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="chart"'><span class="glyphicon glyphicon-stats"></span></a>
+                        <a href="#" class="btn btn-default"><span  class="glyphicon glyphicon-chevron-down" ng-click="showDetails = ! showDetails" ng-hide="showDetails"></span>
+                        <span  class="glyphicon glyphicon-chevron-up" ng-click=" showDetails =! showDetails" ng-show=" showDetails"></span>
+                        </a>
+                    </div>
+                </div>
+                  <div ng-show="showDetails" class="panel-body">{{article.summary}}
+                  </div>
+            </div>
+          </div>
+        </script>
+        <script type= "text/ng-template" id="Industry.tpl.html">
+
+          <div id="viewIndustry" class="col-md-9" style="margin-left:140px ; margin-top:-260px; position:absolute">
+              <div class="panel panel-default" ng-repeat="article in ctrl.articles" ng-if ='article.category=="industry"'>
+                <div class="panel-heading">
+                    <span class="panel-title">{{article.date}}, {{article.heading}}</span>
+                    <div class="btn-group pull-right">
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="document"'><span class="glyphicon glyphicon-open-file"></span></a>
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="chart"'><span class="glyphicon glyphicon-stats"></span></a>
+                        <a href="#" class="btn btn-default"><span  class="glyphicon glyphicon-chevron-down" ng-click="showDetails = ! showDetails" ng-hide="showDetails"></span>
+                        <span  class="glyphicon glyphicon-chevron-up" ng-click=" showDetails =! showDetails" ng-show=" showDetails"></span>
+                        </a>
+                    </div>
+                </div>
+                  <div ng-show="showDetails" class="panel-body">{{article.summary}}
+                  </div>
+            </div>
+          </div>
+        </script>
+
+        <script type="text/ng-template" id="Company.tpl.html">
+
+          <div id="viewCompany" class="col-md-9" style="margin-left:140px ; margin-top:-260px; position:absolute">
+              <div class="panel panel-default" ng-repeat="article in ctrl.articles" ng-if ='article.category=="company"'>{{article.title}}
+                <div class="panel-heading">
+                    <span class="panel-title">{{article.date}}, {{article.heading}}</span>
+                    <div class="btn-group pull-right">
+                        
+                        <a ng-click="ctrl.redirectToLink(article.link)" class="btn btn-default dropdown-toggle"  ng-if='article.type=="document"'><span class="glyphicon glyphicon-open-file"></span></a>
+
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="chart"'><span class="glyphicon glyphicon-stats"></span></a>
+                        <a href="#" class="btn btn-default"><span  class="glyphicon glyphicon-chevron-down" ng-click="showDetails = ! showDetails" ng-hide="showDetails"></span>
+                        <span  class="glyphicon glyphicon-chevron-up" ng-click=" showDetails =! showDetails" ng-show=" showDetails"></span>
+                        </a>
+                    </div>
+                </div>
+                  <div ng-show="showDetails" class="panel-body">{{article.summary}}
+                  </div>
+            </div>
+          </div>
+        </script>
+
+        <script type="text/ng-template" id="Car.tpl.html">
+
+          <div id="viewCar" class="col-md-9" style="margin-left:140px ; margin-top:-260px; position:absolute">
+              <div class="panel panel-default" ng-repeat="article in ctrl.articles" ng-if ='article.category=="car"'>{{article.title}}
+                <div class="panel-heading">
+                    <span class="panel-title">{{article.date}}, {{article.heading}}</span>
+                    <div class="btn-group pull-right">
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="document"'><span class="glyphicon glyphicon-open-file"></span></a>
+                        <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn-default dropdown-toggle" ng-if='article.type=="chart"'><span class="glyphicon glyphicon-stats"></span></a>
+
+                        <a href="#" class="btn btn-default"><span  class="glyphicon glyphicon-chevron-down" ng-click="showDetails = ! showDetails" ng-hide="showDetails"></span>
+                        <span  class="glyphicon glyphicon-chevron-up" ng-click=" showDetails =! showDetails" ng-show=" showDetails"></span>
+                        </a>
+                    </div>
+                </div>
+                  <div ng-show="showDetails" class="panel-body">{{article.summary}}
+                  </div>
+            </div>
+          </div>
+        </script>
+ 
+    </script>
+      
+    <script type="text/ng-template" id="Aiding.tpl.html">
+      <div id="viewAiding" style="text-align:left;">
+        <h3>View Aiding</h3>
+        <div>
+          <divblog-bar-chartbar-height="20"bar-padding="5"></div>
+        </div>
+      </div>
+    </script>
+    
+  </div>
+  </div>
+</div>

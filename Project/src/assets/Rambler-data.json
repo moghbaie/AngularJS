@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "heading": "Rambler Maker Increases Profit",
+    "date": "Jul 25 1958",
+    "summary": "Rambler’s sales helped A.M.C. got the first year’s profit since the merger of the Nash-Kelvinator Corporation and Hudson Motor Car Company in to A.M.C.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57UXB3ekxtd3JNWHc/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 2,
+    "heading": "Rambler Facing Eroding Market",
+    "date": "Jul 25 1965",
+    "summary": "Rambler’s market share was continually declining under intensive market competition.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57c0xKYlVqQVRDR0k/view?usp=sharing",
+    "category": "industry",
+    "data": 0
+  },
+  {
+    "id": 3,
+    "heading": "American Motors Corp. to Drop Rambler Name",
+    "date": "Sep 4 1965",
+    "summary": "Managers narrowed down Rambler production and blamed sales slide to Rambler’s image.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57ZEd6RTE0dEVKQWM/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 4,
+    "heading": "Market Place Rambler Chief States His Case",
+    "date": "Aug 22 1967",
+    "summary": "It is hard to compete with the Big Three. A.M.C. was the only money losing automobile manufacturer in 1967.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57UzNPUGZIZ3hDcGs/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 5,
+    "heading": "American Motors is Optimistic",
+    "date": "Apr 13 1968",
+    "summary": "A.M.C. is optimistic to the small loss in quarter. The dealer shrinking seemed to be the bigger problem.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57U0txdlNpc3ZkRms/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 6,
+    "heading": "Rambler in Black for 3-Month Span",
+    "date": "May 6 1969",
+    "summary": "In 1969, A.M.C. reported its first profit in a March quarter since 1965. New model was brought out to improve the sales.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57akJMZG5fNzlURVU/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 7,
+    "heading": "American Motors' Hornet Displaces the Rambler",
+    "date": "Aug 14 1969",
+    "summary": "For changing the model’s image, Rambler was dropped. A.M.C. declared competitive war on the Ford’s model.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57VWVMR280aTFoWG8/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 8,
+    "heading": "A.M.C. Unveils Sub-Compact Car",
+    "date": "Feb 13 1970",
+    "summary": "Rambler helped A.M.C. turned around in mid 1950s and captured 7 percent of the car market for American Motors in 1963.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57c1p3QUV5clJBRGM/view?usp=sharing",
+    "category": "company",
+    "data": 0
+  },
+  {
+    "id": 9,
+    "heading": "A.M.C.’s Long, Hard Struggle",
+    "date": "Mar 10 1987",
+    "summary": "A.M.C. struggled in compact car market during late 1960s due to invasions of the Big Three, ‘Beetle’, and Japanese automakers.",
+    "type": "document",
+    "link": "https://drive.google.com/file/d/0B8kb3bxjga57VnVkNWFXV094UjQ/view?usp=sharing",
+    "category": "industry",
+    "data": 0
+  },
+  {
+    "id": 10,
+    "heading": "Automobile Industry Production Data",
+    "date": "1897-2011",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "industry",
+    "data": "market"
+  },
+  {
+    "id": 11,
+    "heading": "Gas Prices By Year",
+    "date": "1920-2014",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "economy",
+    "data": "gas"
+  },
+  {
+    "id": 12,
+    "heading": "Consumer Price Index By Year",
+    "date": "1913-2009",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "economy",
+    "data": "cpi"
+  },
+  {
+    "id": 13,
+    "heading": "US GDP By Year",
+    "date": "1930-2010",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "economy",
+    "data": "gdp"
+  },
+  {
+    "id": 14,
+    "heading": "US Population By Year",
+    "date": "1900-2010",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "economy",
+    "data": "pop"
+  },
+  {
+    "id": 15,
+    "heading": "Car Production Data",
+    "date": "1897-2011",
+    "summary": 0,
+    "type": "chart",
+    "link": "http://localhost:3000/#/GDP",
+    "category": "car",
+    "data": "car"
+  }
+]

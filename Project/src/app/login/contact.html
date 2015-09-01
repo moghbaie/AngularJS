@@ -1,0 +1,13 @@
+<!-- 
+<div ui-view="newcontact" style="display:inline-block; width:50%; background-color:red;"></div>
+<div ui-view="existingcontact" style="display:inline-block; width:50%; background-color:green;"></div> -->
+
+
+<ul class="list-group" ng-controller="NavigationCtrl as navCtrl" style="margin-top:80px; margin-left:-120px; display:inline-block;width:50%">
+        <li class="list-group-item"><a href="#" ui-sref="{{navCtrl.stateVals.knewContact.stateName}}">Register</a></li>
+        <li class="list-group-item"><a href="#" ui-sref="{{navCtrl.stateVals.kexistingContact.stateName}}">Login</a></li>
+</ul>
+
+<div ui-view >
+
+</div>

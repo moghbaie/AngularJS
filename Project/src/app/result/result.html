@@ -1,0 +1,25 @@
+
+    <script type="text/ng-template" id="myModalContent.html" >
+        <div class="modal-header">
+            <h3 class="modal-title">" What factors affected the car?"</h3>
+        </div>
+
+        <div class="modal-body">
+            
+                <div ng-repeat="item in items">
+                    
+                        
+                        <label>{{item.reason}}
+                        <input type="radio" ng-model="item.answer" value="Yes"> Yes</label>
+                        <label>
+                        <input type="radio" ng-model="item.answer" ng-value="No"> No</label>
+                   </br></br>
+                </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+    <button type="button" class="btn btn-default" ng-click="open('sm')" style="margin-right:15% ;margin-left:60%; float:right">I want to make my decision</button>

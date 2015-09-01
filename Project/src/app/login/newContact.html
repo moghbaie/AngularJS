@@ -1,0 +1,39 @@
+<div ui-sref="existcontact"></div>
+</br></br></br></br></br></br></br></br>
+
+<div class="container" style="margin-right:50px">
+	<form name="ctrl.myForm" ng-submit="ctrl.onSubmit()" novalidate>
+
+		<input  type="text" 
+				ng-model="ctrl.person.fname" 
+				placeholder="fName"
+				name="first name" 
+				required>
+		
+		<input  type="text" 
+				ng-model="ctrl.person.lname" 
+				placeholder="lName"
+				name="last name">
+
+		<input  type="email" 
+				ng-model="ctrl.person.email" 
+				placeholder="Email"
+				name="userEmail"
+				required>
+
+<!-- 		<input  type="phone" 
+				ng-model="ctrl.phone" 
+				placeholder="Phone"
+				name="userPhone"
+				ng-pattern="/^\(\d\d\d\) \d\d\d-\d\d\d\d$/"> -->
+
+
+		<input type="submit" class="btn btn-primary" value="Submit">		
+
+	</form>
+</div>
+<div>
+	<pre>
+		{{ctrl.person}},{{ctrl.list}}
+	</pre>
+</div>

@@ -1,0 +1,21 @@
+<div class="panel-heading">
+        <span class="panel-title">{{article.date}}, {{article.heading}}</span>
+            <div class="btn-group pull-right">
+                <a ng-click="ctrl.redirectToLink(article.link)"  class="btn btn- dropdown-toggle" ng-if='article.type=="document"'>
+                    <span class="glyphicon glyphicon-open-file">
+                    </span>
+                </a>
+                <a href="#" class="btn btn-default dropdown-toggle" ng-if='article.type=="chart"'>
+                    <span class="glyphicon glyphicon-stats">
+                    </span>
+                </a>
+                <a href="#" class="btn btn-default">
+                    <span  class="glyphicon glyphicon-chevron-down" ng-click="showDetails = ! showDetails" ng-hide="showDetails">
+                    </span>
+                    <span  class="glyphicon glyphicon-chevron-up" ng-click=" showDetails =! showDetails" ng-show=" showDetails">
+                    </span>
+                </a>
+            </div>
+</div>
+<div ng-show="showDetails" class="panel-body">{{article.summary}}
+</div>
